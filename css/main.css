@@ -362,7 +362,9 @@ h2,
 h3,
 h4,
 p,
-ul {
+ul,
+li,
+a {
   margin: 0;
   padding: 0;
 }
@@ -494,56 +496,45 @@ header {
   .nav .current {
     color: #2196f3;
   }
-}
-
-.current::after {
-  opacity: 1;
-}
-
-.nav:hover::after,
-.nav:focus::after {
-  opacity: 1;
-}
-
-/* Адрес в навигации */
-@media screen and (min-width: 768px) {
-  .link-list {
-    display: block;
-    margin-left: 0 auto;
+  .current::after {
+    opacity: 1;
   }
-}
-
-.address-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.address-link:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.address-link .contact-icon {
-  margin-right: 8px;
-  fill: currentColor;
-}
-
-.address {
-  display: block;
-  padding-bottom: 10px;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.address:hover, .address:focus {
-  color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .nav:hover::after,
+  .nav:focus::after {
+    opacity: 1;
+  }
+  .address-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 21px 0;
+  }
+  .address-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address-link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address-link .contact-icon {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  .address {
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .address:hover, .address:focus {
+    color: #2196f3;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 /* Подвал */

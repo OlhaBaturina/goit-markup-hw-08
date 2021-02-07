@@ -62,46 +62,49 @@ header {
       color: $accent-color;
     }
   }
+
+  .current::after {
+    opacity: 1;
+  }
+  .nav:hover::after,
+  .nav:focus::after {
+    opacity: 1;
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: center;
+
+    padding: 21px 0;
+  }
+
+  .address-link {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .contact-icon {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+  }
+
+  .address {
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+  }
 }
 
-.current::after {
-  opacity: 1;
-}
-.nav:hover::after,
-.nav:focus::after {
-  opacity: 1;
-}
-/* Адрес в навигации */
-.link-list {
-  @media screen and (min-width: $tablet) {
-    display: block;
-    margin-left: 0 auto;
-  }
-}
-
-.address-link {
-  display: flex;
-  align-items: center;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .contact-icon {
-    // display: block;
-    margin-right: 8px;
-    fill: currentColor;
-  }
-}
-
-.address {
-  display: block;
-  padding-bottom: 10px;
-  // padding: 32px 0px;
-  letter-spacing: 0.02em;
-  color: $main-text-color;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-  }
-}
+// @media screen and (min-width: $decstop) {
+//   address-link {
+//     display: block;
+//   }
+// }
