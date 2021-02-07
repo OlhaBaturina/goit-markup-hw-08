@@ -1,0 +1,27 @@
+.overley-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overley {
+  position: absolute;
+  top: 294px;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  transform: translateY(100%);
+  opacity: 0;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  .product:hover &,
+  .product:focus & {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}

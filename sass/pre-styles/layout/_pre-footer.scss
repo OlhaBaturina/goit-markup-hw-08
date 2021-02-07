@@ -1,0 +1,43 @@
+/* Подвал */
+
+.footer {
+  background-color: $darck-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &-social {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  h2 {
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+.footer-box {
+  margin-right: 70px;
+  line-height: 1.71;
+  font-style: normal;
+  .footer-address {
+    color: $main-color;
+  }
+  .footer-address:not(:last-child) {
+    padding-bottom: 9px;
+  }
+  .footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .mail {
+    display: block;
+    padding-bottom: 9px;
+  }
+}

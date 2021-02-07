@@ -1,0 +1,41 @@
+/* Логотипы компаний */
+
+.client {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  h2 {
+    padding-bottom: 50px;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-icon:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+
+    @include bordered(#afb1b8);
+    border-radius: 4px;
+    fill: #afb1b8;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    border-radius: 4px;
+    fill: $accent-color;
+    border-color: $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+}
