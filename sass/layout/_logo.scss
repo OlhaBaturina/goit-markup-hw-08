@@ -2,6 +2,7 @@
 
 .logo {
   display: block;
+
   font-family: Raleway, sans-serif;
   color: #000000;
   font-weight: 700;
@@ -10,17 +11,16 @@
   &-web {
     color: $accent-color;
   }
-}
 
-@media screen and (max-width: 767px) {
-  .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  @media screen and (max-width: $tablet - 1px) {
+    padding: 16px 0;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .logo {
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
   }
