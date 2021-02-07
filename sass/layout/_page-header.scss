@@ -1,9 +1,22 @@
 header {
   border-bottom: 1px solid #ececec;
 }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     display: none;
+  }
+  .mobile-menu {
+    display: block;
   }
 }
 .current::after {
