@@ -418,6 +418,15 @@ h2 {
   }
 }
 
+/* Скрытые заголовки */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 header {
   width: 100%;
   border-bottom: 1px solid #ececec;
@@ -544,15 +553,6 @@ header {
   padding-bottom: 60px;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
 .footer-social {
   display: inline-block;
   margin-top: 12px;
@@ -563,13 +563,12 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
   color: #ffffff;
 }
 
 .footer-box {
-  margin-right: 70px;
   line-height: 1.71;
   font-style: normal;
 }
@@ -921,39 +920,15 @@ header {
 }
 
 .mail-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 12px;
-  margin-left: auto;
-  margin-right: 0;
 }
 
-.mail-form h2 {
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.mail-form .mail-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mail-form .mail-label {
+.mail-form .mail-box .mail-label {
   width: inherit;
   height: inherit;
 }
 
-.mail-form .mail-input {
+.mail-form .mail-box .mail-input {
   display: block;
   width: 358px;
   height: 50px;
@@ -1026,13 +1001,6 @@ header {
   background-color: #ffffff;
 }
 
-.service .section-service {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
 .service-list {
   display: block;
   width: 370px;
@@ -1074,9 +1042,6 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   margin-top: 50px;
 }
@@ -1121,15 +1086,6 @@ header {
 
 .client h2 {
   padding-bottom: 50px;
-}
-
-.client-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .client-icon:not(:last-child) {
