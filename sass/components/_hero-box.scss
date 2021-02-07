@@ -1,0 +1,34 @@
+/* Герой */
+
+.hero-box {
+  overflow: hidden;
+  background-image: linear-gradient(
+      to right,
+      rgba(58, 58, 47, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/people.jpg);
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: block;
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $main-color;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  .hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
