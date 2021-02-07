@@ -1059,8 +1059,25 @@ header {
   }
 }
 
-.service {
-  background-color: #ffffff;
+@media screen and (max-width: 1199px) {
+  .service {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    display: block;
+    padding-bottom: 94px;
+    background-color: #ffffff;
+  }
+}
+
+.service .section-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
 }
 
 .service-list {
