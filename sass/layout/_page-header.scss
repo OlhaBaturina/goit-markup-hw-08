@@ -23,6 +23,7 @@ header {
 @media screen and (min-width: $tablet) {
   .nav-conteiner {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -103,7 +104,7 @@ header {
   }
 }
 
-// @media screen and (min-width: $decstop) {
+// @media screen and (min-width: $desktop) {
 //   address-link {
 //     display: block;
 //   }

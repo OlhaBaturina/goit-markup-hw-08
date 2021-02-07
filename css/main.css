@@ -362,9 +362,7 @@ h2,
 h3,
 h4,
 p,
-ul,
-li,
-a {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -393,31 +391,6 @@ h2 {
   color: #212121;
 }
 
-/* Общий контейнер */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 /* Скрытые заголовки */
 .visually-hidden {
   position: absolute;
@@ -425,6 +398,32 @@ h2 {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+/* Общий контейнер */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 header {
@@ -462,6 +461,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -692,16 +694,17 @@ header {
 /* Герой */
 .hero-box {
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/people.jpg);
-  background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
   background-color: #c4c4c4;
-  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/people.jpg");
+  background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/people.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: block;
-  max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -711,10 +714,42 @@ header {
 
 .hero-box .hero {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-box {
+    background-image: url("../images/tablet/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-box {
+    background-image: url("../images/desktop/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero {
+    font-size: 44px;
+    line-height: 1.3;
+  }
 }
 
 .hero-box .button, .filter, .mail-send, .submit-form {
@@ -996,8 +1031,6 @@ header {
 }
 
 .service {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #ffffff;
 }
 
@@ -1123,35 +1156,17 @@ header {
 
 .section-product {
   background: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section-product .button-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.section-product .portfolio-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: calc((100% - 60px) / 3);
-      -ms-flex: calc((100% - 60px) / 3);
-          flex: calc((100% - 60px) / 3);
-  margin-top: -30px;
-  margin-left: -30px;
 }
 
 .portfolio-product {
-  margin-top: 30px;
-  margin-left: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;

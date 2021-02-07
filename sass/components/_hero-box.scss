@@ -2,33 +2,74 @@
 
 .hero-box {
   overflow: hidden;
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
       rgba(58, 58, 47, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/people.jpg);
-  background-color: #c4c4c4;
-  background-repeat: no-repeat;
+    url("../images/mobile/people.jpg");
+
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   display: block;
-  max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-
   color: $main-color;
   text-align: center;
   letter-spacing: 0.06em;
 
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   background-image: url("../image/mobile/people@2x.jpg");
+  // }
   .hero {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .hero-box {
+    background-image: url("../images/tablet/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: block;
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero-box {
+    background-image: url("../images/desktop/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: block;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .hero {
+    font-size: 44px;
+    line-height: 1.3;
   }
 }
