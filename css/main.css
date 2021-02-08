@@ -1190,16 +1190,30 @@ header {
 /* Логотипы компаний */
 .client {
   display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 
 .client h2 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  font-size: 28px;
+  line-height: 33px;
 }
 
-.client-icon:not(:last-child) {
-  margin-right: 30px;
+.client-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.client-icon {
+  display: block;
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
 }
 
 .client-link {
@@ -1212,7 +1226,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1229,6 +1242,32 @@ header {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .client {
+    padding: 94px 0;
+  }
+  .client h2 {
+    padding-bottom: 50px;
+  }
+  .client-icon {
+    width: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding: 94px 0;
+  }
+  .client h2 {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .client-icon {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .section-product {

@@ -2,29 +2,31 @@
 
 .client {
   display: block;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 
   h2 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
   }
 
-  // &-box {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
+  &-box {
+    display: flex;
 
-  &-icon:not(:last-child) {
-    margin-right: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-icon {
+    display: block;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 
   &-link {
     display: flex;
-
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 90px;
 
     @include bordered(#afb1b8);
@@ -39,5 +41,33 @@
     border-color: $accent-color;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .client {
+    padding: 94px 0;
+
+    h2 {
+      padding-bottom: 50px;
+    }
+    &-icon {
+      width: calc((100% - 90px) / 3);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .client {
+    padding: 94px 0;
+
+    h2 {
+      padding-bottom: 50px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &-icon {
+      width: calc((100% - 180px) / 6);
+    }
   }
 }
