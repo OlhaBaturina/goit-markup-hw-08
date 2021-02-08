@@ -11,8 +11,11 @@
   &-web {
     color: $accent-color;
   }
+}
 
+ header .logo{
   @media screen and (max-width: $tablet - 1px) {
+   
     padding: 16px 0;
   }
 
@@ -25,6 +28,7 @@
     line-height: 1.19;
   }
 }
+
 
 .footer .logo {
   color: $main-color;
