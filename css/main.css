@@ -391,6 +391,12 @@ h2 {
   color: #212121;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Скрытые заголовки */
 .visually-hidden {
   position: absolute;
@@ -551,23 +557,21 @@ header {
 /* Подвал */
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-social {
-  display: inline-block;
-  margin-top: 12px;
+  padding: 60px 0;
 }
 
 .footer h2 {
   display: block;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
   color: #ffffff;
+}
+
+.footer-container {
+  text-align: center;
 }
 
 .footer-box {
@@ -575,21 +579,42 @@ header {
   font-style: normal;
 }
 
-.footer-box .footer-address {
+.footer-box:not(:last-child) {
+  margin: 0 auto 60px;
+}
+
+.footer-address {
   color: #ffffff;
 }
 
-.footer-box .footer-address:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.footer-box .footer-contacts {
+.footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-box .mail {
+.footer .mail {
   display: block;
-  padding-bottom: 9px;
+}
+
+.footer .social-icon {
+  fill: #ffffff;
+}
+
+.mail-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2f303a;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .backdrop {
@@ -952,34 +977,6 @@ header {
 .agreement .icon-check,
 .agreement .agreement-check:checked ~ .icon-not-check {
   display: none;
-}
-
-.mail-form {
-  margin-top: 12px;
-}
-
-.mail-form .mail-box .mail-label {
-  width: inherit;
-  height: inherit;
-}
-
-.mail-form .mail-box .mail-input {
-  display: block;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background: #2f303a;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Блок преимущества и услуги */
