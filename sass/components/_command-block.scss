@@ -1,17 +1,37 @@
 /* Команда */
 
+.command-section {
+  background-color: $command-background-color;
+  padding: 60px 0;
+}
+
 .command {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  // display: flex;
   text-align: center;
-  margin-top: 50px;
+
+  &-people {
+    display: block;
+    width: 100%;
+    background-color: $main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    margin-bottom: 30px;
+  }
+
+  &-info {
+    min-height: 162px;
+    padding: 30px 15px 24px;
+  }
 
   &-name {
     color: $heading-color;
     display: inline-block;
-    padding-top: 30px;
+
     padding-bottom: 10px;
   }
 
@@ -19,23 +39,33 @@
     color: $main-text-color;
     margin-bottom: 16px;
   }
+}
 
-  &-section {
-    background-color: $command-background-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (min-width: $tablet) {
+  .command {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-people {
+      width: calc((100% - 30px) / 2);
+    }
   }
+}
 
-  &-people {
-    display: block;
-    width: 270px;
-    background-color: $main-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+@media screen and (min-width: $desktop) {
+  .command-section {
+    padding: 60px 0;
   }
+  .command {
+    padding-top: 50px;
 
-  &-people:not(:last-child) {
-    margin-right: 30px;
+    &-people {
+      width: calc((100% - 90px) / 4);
+    }
+    &-info {
+      min-height: 168px;
+      padding: 30px 15px;
+    }
   }
 }
