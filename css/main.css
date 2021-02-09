@@ -554,6 +554,21 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .address-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address-link:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /* Подвал */
 .footer {
   background-color: #2f303a;

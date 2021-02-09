@@ -104,8 +104,16 @@ header {
   }
 }
 
-// @media screen and (min-width: $desktop) {
-//   address-link {
-//     display: block;
-//   }
-// }
+@media screen and (min-width: $desktop) {
+  .address-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .address-link {
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
