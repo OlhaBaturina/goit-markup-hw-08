@@ -105,13 +105,8 @@ header {
 }
 
 @media screen and (min-width: $desktop) {
-  .address-container {
-    margin-left: auto;
-    margin-right: 0;
-  }
-
   .address-link {
-    align-items: center;
+    display: inline-flex;
     &:not(:last-child) {
       margin-right: 30px;
     }
