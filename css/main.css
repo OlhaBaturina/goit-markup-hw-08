@@ -868,7 +868,7 @@ header {
   height: 38px;
   padding: 6px 22px;
   margin-right: 8px;
-  margin-bottom: 56px;
+  margin-bottom: 15px;
   font-weight: 500;
   line-height: 1.62;
   color: #212121;
@@ -1334,6 +1334,7 @@ header {
 
 .section-product {
   background: #ffffff;
+  padding: 60px 0;
 }
 
 .section-product .button-filter {
@@ -1342,6 +1343,11 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.portfolio-box {
+  margin: 0 auto;
 }
 
 .portfolio-product {
@@ -1349,12 +1355,16 @@ header {
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 370px;
-  height: 404px;
+  max-width: 450px;
+  min-height: 404px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-product:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-product:hover, .portfolio-product:focus {
@@ -1382,19 +1392,44 @@ header {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .button-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio-box .portfolio-product {
+    width: calc((100% - 30px) / 2);
+  }
+  .portfolio-box .portfolio-product {
+    max-width: 354px;
+  }
+}
+
 .overley-box {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .product-overley {
   position: absolute;
-  top: 294px;
+  top: 100%;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-style: normal;
   font-size: 18px;
   line-height: 1.56;
