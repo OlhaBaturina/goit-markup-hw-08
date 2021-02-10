@@ -56,11 +56,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .portfolio-product {
-      width: calc((100% - 30px) / 2);
-    }
+    // .portfolio-product {
+    //   width: calc((100% - 30px) / 2);
+    // }
     .portfolio-product {
       max-width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section-product {
+    padding: 94px 0px 64px;
+    .portfolio-product {
+      max-width: 370px;
+      margin-bottom: 30px;
     }
   }
 }

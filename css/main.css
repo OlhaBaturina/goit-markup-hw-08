@@ -1409,10 +1409,17 @@ header {
             justify-content: space-between;
   }
   .portfolio-box .portfolio-product {
-    width: calc((100% - 30px) / 2);
-  }
-  .portfolio-box .portfolio-product {
     max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-product {
+    padding: 94px 0px 64px;
+  }
+  .section-product .portfolio-product {
+    max-width: 370px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1448,6 +1455,18 @@ header {
   opacity: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+@media screen and (min-width: 768px) {
+  .product-overley {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-overley {
+    padding: 63px 24px;
+  }
 }
 
 .social {
