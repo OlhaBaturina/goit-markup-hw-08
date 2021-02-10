@@ -1,13 +1,24 @@
-// @media screen and (max-width: $tablet - 1px) {
-//   .mobile-menu {
-//     display: block;
-//     overflow: hidden;
-//   }
-//   .mobile-modal {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     max-width: 480px;
-//     height: 100%;
-//   }
-// }
+.mobile-modal {
+  display: none;
+}
+
+@media screen and (max-width: $tablet - 1px) {
+  .mobile-modal {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    // pointer-events: none;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main-color;
+
+    padding: 48px 40px;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $heading-color;
+  }
+}
