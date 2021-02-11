@@ -3,22 +3,74 @@
 }
 
 @media screen and (max-width: $tablet - 1px) {
+  .mobile-menu {
+    z-index: 8;
+  }
   .mobile-modal {
     position: absolute;
-    display: block;
+
     top: 0;
     left: 0;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
     z-index: 5;
     // pointer-events: none;
     width: 100%;
     min-height: 100vh;
     background-color: $main-color;
-
-    padding: 48px 40px;
-    font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: $heading-color;
+
+    &-link {
+      display: block;
+      font-size: 40px;
+      color: $heading-color;
+      margin-bottom: 32px;
+    }
+    &-link:hover,
+    &-link:focus {
+      color: $accent-color;
+    }
+
+    .address-link:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    .address-list {
+      margin-bottom: 64px;
+    }
+    .mobile-telefone {
+      font-size: 34px;
+      line-height: 40px;
+      color: $accent-color;
+    }
+    .mobile-email {
+      font-size: 24px;
+      line-height: 1.17;
+      color: $main-text-color;
+    }
+
+    .mobile-social {
+      display: flex;
+      flex-wrap: wrap;
+      .mobile-social-list {
+        display: block;
+        &:not(:last-child) {
+          padding-right: 10px;
+          margin-right: 10px;
+          border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+      }
+
+      .mobile-social-link {
+        font-size: 18px;
+        line-height: 1.22;
+
+        color: $accent-color;
+      }
+    }
   }
 }
