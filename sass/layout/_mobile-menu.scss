@@ -20,6 +20,7 @@
     background-color: $main-color;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    opacity: 0;
 
     &-link {
       display: block;
@@ -69,5 +70,8 @@
         color: $accent-color;
       }
     }
+  }
+  .is-open .mobile-modal {
+    opacity: 1;
   }
 }

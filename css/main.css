@@ -824,6 +824,7 @@ header {
     background-color: #ffffff;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    opacity: 0;
   }
   .mobile-modal-link {
     display: block;
@@ -869,6 +870,9 @@ header {
     font-size: 18px;
     line-height: 1.22;
     color: #2196f3;
+  }
+  .is-open .mobile-modal {
+    opacity: 1;
   }
 }
 
