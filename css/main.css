@@ -700,8 +700,7 @@ header {
 
 .backdrop {
   position: fixed;
-  z-index: 1;
-  /* display: block; */
+  z-index: 8;
   top: 0;
   left: 0;
   width: 100%;
@@ -728,6 +727,7 @@ header {
   height: 580px;
   top: 50%;
   left: 50%;
+  z-index: 10;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
@@ -804,13 +804,10 @@ header {
 @media screen and (max-width: 767px) {
   .mobile-modal {
     position: absolute;
-    display: block;
+    display: none;
     top: 0;
     left: 0;
     bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -820,12 +817,12 @@ header {
             justify-content: space-between;
     padding: 48px 40px;
     z-index: 5;
+    pointer-events: none;
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    opacity: 0;
   }
   .mobile-modal-link {
     display: block;
@@ -873,7 +870,9 @@ header {
     color: #2196f3;
   }
   .is-open.mobile-modal {
-    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

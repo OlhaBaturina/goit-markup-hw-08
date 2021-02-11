@@ -5,22 +5,20 @@
 @media screen and (max-width: $tablet - 1px) {
   .mobile-modal {
     position: absolute;
-    display: block;
+    display: none;
     top: 0;
     left: 0;
     bottom: 0;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 48px 40px;
     z-index: 5;
-    // pointer-events: none;
+    pointer-events: none;
     width: 100%;
     min-height: 100vh;
     background-color: $main-color;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    opacity: 0;
 
     &-link {
       display: block;
@@ -72,6 +70,6 @@
     }
   }
   .is-open.mobile-modal {
-    opacity: 1;
+    display: flex;
   }
 }
