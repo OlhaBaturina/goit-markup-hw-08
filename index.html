@@ -83,10 +83,26 @@
           </ul>
         </address>
         <!-- Кнопка мобильного меню -->
-        <button type="button" class="mobile-menu">
-          <svg class="mobile-menu-icon" width="24" height="20">
-            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
-            <use href="./images/symbol-defs.svg#icon-close"></use>
+        <button
+          type="button"
+          aria-label="Открывает меню навигации"
+          class="mobile-menu is-open"
+          data-menu-button
+        >
+          <svg
+            class="mobile-menu-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-burger-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
           </svg>
         </button>
       </div>
@@ -731,6 +747,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <!-- </div> -->
   </body>

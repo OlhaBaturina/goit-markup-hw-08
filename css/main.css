@@ -458,7 +458,23 @@ header {
     display: none;
   }
   .mobile-menu {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 8;
+  }
+  .icon-cross {
+    display: none;
+  }
+  .is-open .icon-cross {
+    display: block;
+  }
+  .is-open .icon-menu {
+    display: none;
   }
 }
 
@@ -786,9 +802,6 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .mobile-menu {
-    z-index: 8;
-  }
   .mobile-modal {
     position: absolute;
     top: 0;
