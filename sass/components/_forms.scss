@@ -37,9 +37,9 @@
 
 .form-input {
   position: relative;
-  width: 450px;
+  width: 370px;
   height: 40px;
-  padding-left: 42px;
+  padding: 0 42px;
   @include bordered(rgba(33, 33, 33, 0.2));
   border-radius: 4px;
   &::placeholder {
@@ -50,6 +50,12 @@
   }
   &:focus ~ .form-icon {
     fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .form-input {
+    width: 450px;
   }
 }
 
@@ -94,4 +100,3 @@
     display: none;
   }
 }
-
