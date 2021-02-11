@@ -723,8 +723,9 @@ header {
 
 .modal {
   position: fixed;
-  width: 528px;
-  height: 580px;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 94px 15px;
   top: 50%;
   left: 50%;
   z-index: 10;
