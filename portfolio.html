@@ -81,15 +81,104 @@
             </li>
           </ul>
         </address>
-
-        <div class="mobile-menu">
-          <svg class="mobile-menu-icon" width="24" height="20">
-            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
-            <use href="./images/symbol-defs.svg#icon-close"></use>
+        <!-- Кнопка мобильного меню -->
+        <button
+          type="button"
+          class="mobile-menu is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="mobile-menu-icon"
+            width="25"
+            height="25"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-burger-menu"
+            ></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
+    <!-- Мобильное меню -->
+    <div class="mobile-modal" id="menu-container" data-menu>
+      <ul class="mobile-modal-menu">
+        <li>
+          <a href="./index.html" class="mobile-modal-link">Студия</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-modal-link">Портфолио</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-modal-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="mobile-address">
+        <address class="mobile-modal-address">
+          <ul class="address-list">
+            <li class="address-link">
+              <a
+                href="tel:+380961111111"
+                class="mobile-telefone"
+                aria-label="Позвонить на мобильный"
+              >
+                +380961111111
+              </a>
+            </li>
+            <li class="address-link">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-email"
+                aria-label="Написать на имейл"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social-list">
+              <a
+                href="#"
+                class="mobile-social-link"
+                aria-label="Ведет на страницу в соцсети"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-social-list">
+              <a
+                href="#"
+                class="mobile-social-link"
+                aria-label="Ведет на страницу в соцсети"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-social-list">
+              <a
+                href="#"
+                class="mobile-social-link"
+                aria-label="Ведет на страницу в соцсети"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-social-list">
+              <a
+                href="#"
+                class="mobile-social-link"
+                aria-label="Ведет на страницу в соцсети"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
     <main>
       <section class="section-product">
         <div class="container">
@@ -413,5 +502,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
