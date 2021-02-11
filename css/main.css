@@ -462,7 +462,7 @@ header {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     border: none;
     background-color: transparent;
     z-index: 8;
@@ -804,6 +804,7 @@ header {
 @media screen and (max-width: 767px) {
   .mobile-modal {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     bottom: 0;
