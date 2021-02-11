@@ -872,7 +872,7 @@ header {
     line-height: 1.22;
     color: #2196f3;
   }
-  .is-open .mobile-modal {
+  .is-open.mobile-modal {
     opacity: 1;
   }
 }
