@@ -763,6 +763,7 @@ header {
   display: block;
   width: 30px;
   height: 30px;
+  padding: 9px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
