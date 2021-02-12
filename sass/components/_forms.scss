@@ -79,10 +79,16 @@
     height: 15px;
   }
   &-text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+  }
+  @media screen and (min-width: $desktop) {
+    &-text {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   a {
     text-decoration: underline;
