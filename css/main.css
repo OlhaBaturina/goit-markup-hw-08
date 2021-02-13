@@ -1386,10 +1386,11 @@ header {
 
 @media screen and (min-width: 1200px) {
   .command-section {
-    padding: 60px 0;
+    padding: 94px 0;
   }
   .command {
     padding-top: 50px;
+    margin-bottom: 0;
   }
   .command-people {
     width: calc((100% - 90px) / 4);
