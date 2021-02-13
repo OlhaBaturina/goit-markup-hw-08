@@ -895,90 +895,6 @@ header {
   }
 }
 
-/* Герой */
-.hero-box {
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/people.jpg");
-  background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/people.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  max-width: 480px;
-  height: 400px;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero-box .box {
-    background-image: url("../images/mobile/people@2x.jpg");
-  }
-}
-
-.hero-box .hero {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-box {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/people.jpg");
-    background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/people.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    max-width: 768px;
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero-box .box {
-    background-image: url("../images/tablet/people@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-box {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/people.jpg");
-    background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/people.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero-box .box {
-    background-image: url("../images/desktop/people@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    font-size: 44px;
-    line-height: 1.3;
-  }
-}
-
 .hero-box .button, .filter, .mail-send, .submit-form {
   display: inline-block;
   font-family: inherit;
@@ -1194,6 +1110,90 @@ header {
   display: none;
 }
 
+/* Герой */
+.hero-box {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/people.jpg");
+  background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/people.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-box .box {
+    background-image: url("../images/mobile/people@2x.jpg");
+  }
+}
+
+.hero {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-box {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/people.jpg");
+    background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-box .box {
+    background-image: url("../images/tablet/people@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-box {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 47, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/people.jpg");
+    background-image: linear-gradient(to right, rgba(58, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/people.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-box .box {
+    background-image: url("../images/desktop/people@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 /* Блок преимущества и услуги */
 .company {
   background-color: #ffffff;
@@ -1230,6 +1230,7 @@ header {
 
 .company-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;

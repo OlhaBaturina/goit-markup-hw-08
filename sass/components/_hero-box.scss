@@ -31,23 +31,17 @@
   color: $main-color;
   text-align: center;
   letter-spacing: 0.06em;
-
-  .hero {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    @media screen and (min-width: $desktop) {
-      .hero {
-        font-size: 44px;
-        line-height: 1.36;
-      }
-    }
-  }
 }
+.hero {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: $tablet) {
   .hero-box {
     background-image: linear-gradient(
@@ -97,5 +91,9 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  .hero {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
