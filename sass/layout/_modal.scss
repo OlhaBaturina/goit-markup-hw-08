@@ -62,7 +62,7 @@
   display: block;
   width: 30px;
   height: 30px;
-
+  text-align: center;
   background: #ffffff;
   @include bordered(rgba(0, 0, 0, 0.1));
   border-radius: 50%;
